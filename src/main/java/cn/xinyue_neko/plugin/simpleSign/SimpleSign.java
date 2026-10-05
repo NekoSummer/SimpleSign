@@ -4,12 +4,10 @@ import cn.xinyue_neko.plugin.simpleSign.event.PlayerJoinSign;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.*;
-import java.util.logging.Logger;
 
 public final class SimpleSign extends JavaPlugin {
 
