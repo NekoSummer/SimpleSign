@@ -37,7 +37,7 @@ public class PlayerJoinSign implements Listener {
             SimpleSign.getData().set(uuid, today);
             SimpleSign.saveData();
             player.sendMessage(Config.MESSAGES_SUCCESS
-                    .replace("{money}", String.valueOf(Config.SIGN_MONEYS))
+                    .replace("{money}", (Config.formatMoney(Config.SIGN_MONEYS)))
                     .replace('&', ChatColor.COLOR_CHAR)
             );
         } else {
