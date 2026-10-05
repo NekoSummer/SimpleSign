@@ -1,0 +1,7 @@
+name: SimpleSign
+version: 1.0.0
+depend: [Vault]
+main: cn.xinyue_neko.plugin.simpleSign.SimpleSign
+api-version: '1.13'
+authors:
+  - NewmoomCat
