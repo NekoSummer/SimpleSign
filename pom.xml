@@ -6,7 +6,7 @@
 
     <groupId>cn.xinyue-neko.plugin</groupId>
     <artifactId>SimpleSign</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>SimpleSign</name>
@@ -46,11 +46,11 @@
 
     <repositories>
         <repository>
-            <id>spigotmc-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <id>spigotmc-public</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
         <repository>
-            <id>papermc-repo</id>
+            <id>papermc-public</id>
             <url>https://repo.papermc.io/repository/maven-public</url>
         </repository>
         <repository>

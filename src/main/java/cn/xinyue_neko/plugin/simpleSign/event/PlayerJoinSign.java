@@ -4,6 +4,7 @@ import cn.xinyue_neko.plugin.simpleSign.SimpleSign;
 import cn.xinyue_neko.plugin.simpleSign.config.Config;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -36,6 +37,7 @@ public class PlayerJoinSign implements Listener {
         if (response.transactionSuccess()) {
             SimpleSign.getData().set(uuid, today);
             SimpleSign.saveData();
+            player.getWorld().playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1f, 1f);
             player.sendMessage(Config.MESSAGES_SUCCESS
                     .replace("{money}", (Config.formatMoney(Config.SIGN_MONEYS)))
                     .replace('&', ChatColor.COLOR_CHAR)

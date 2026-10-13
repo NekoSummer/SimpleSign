@@ -3,11 +3,11 @@ plugins {
 }
 
 group = 'cn.xinyue-neko.plugin'
-version = '1.0.1'
+version = '1.0.3'
 
 repositories {
     mavenCentral()
-    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url = 'https://hub.spigotmc.org/nexus/content/groups/public/' }
     maven { url = 'https://jitpack.io' }
     maven { url = 'https://repo.papermc.io/repository/maven-public'}
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
