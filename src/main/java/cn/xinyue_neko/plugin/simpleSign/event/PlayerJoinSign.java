@@ -27,6 +27,7 @@ public class PlayerJoinSign implements Listener {
         String lastSign = SimpleSign.getData().getString(uuid);
 
         if (today.equals(lastSign)) {
+            player.getWorld().playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1f, 1f);
             player.sendMessage(Config.MESSAGE_ALREADY
                     .replace('&', ChatColor.COLOR_CHAR)
             );
